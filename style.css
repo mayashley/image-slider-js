@@ -3,8 +3,38 @@
   padding: 0;
   box-sizing: border-box;
 }
-img{
-    width: 30vw;
-    height: 80vh;
-    object-fit: cover;
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 30vw;
+  height: 80vh;
+}
+.image-container-before,
+.image-container-after {
+  position: absolute;
+}
+.image-container-before {
+  width: 15vw;
+  overflow: hidden;
+}
+img {
+  width: 30vw;
+  height: 80vh;
+  object-fit: cover;
+}
+.slider {
+  width: 0.5rem;
+  height: 100%;
+  background: yellow;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  /* transform translate to make the slider bar exactly in the middle if not, it will contiue to push over into the right hand image */
+  transform: translate(-50%, 0%);
 }
