@@ -1,1 +1,10 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+    width: 30vw;
+    height: 80vh;
+    object-fit: cover;
+}
