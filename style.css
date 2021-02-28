@@ -8,11 +8,12 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  flex-direction: column;
 }
 .container {
   position: relative;
-  width: 30vw;
-  height: 80vh;
+  width: 80vw;
+  height: 90vh;
 }
 .image-container-before,
 .image-container-after {
@@ -23,8 +24,8 @@ body {
   overflow: hidden;
 }
 img {
-  width: 30vw;
-  height: 80vh;
+  width: 80vw;
+  height: 90vh;
   object-fit: cover;
 }
 .slider {
@@ -37,4 +38,18 @@ img {
   left: 50%;
   /* transform translate to make the slider bar exactly in the middle if not, it will contiue to push over into the right hand image */
   transform: translate(-50%, 0%);
+  pointer-events: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    position: relative;
+    width: 50vw;
+    height: 80vh;
+  }
+  img {
+    width: 50vw;
+    height: 80vh;
+    object-fit: cover;
+  }
 }
